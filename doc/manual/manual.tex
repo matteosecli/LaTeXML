@@ -388,7 +388,7 @@ which overrides the extension used in the destination. The recognized formats ar
      some `vector' style graphics are converted to SVG,
      other graphics are converted to images;
      \code{LaTeXML-html5.xslt} is used.
-     The file extension html is generates html5
+     The file extension html generates html5
  \item[html4] both math and graphics are converted to png images;
     \code{LaTeXML-html4.xslt} is used.
  \item[xhtml] math is converted to Presentation \MathML, other graphics are converted to images;
@@ -529,7 +529,7 @@ You can also request the inclusion of your own stylesheets from the commandline 
 \shellcode{--css} option.  Some sample \CSS\ enhancements are included with the distribution:
 \begin{description}
 \item[\code{LaTeXML-navbar-left.css}] Places a navigation bar on the left.
-\item[\code{LaTeXML-navbar-right.css}] Places a navigation bar on the left.
+\item[\code{LaTeXML-navbar-right.css}] Places a navigation bar on the right.
 \item[\code{LaTeXML-blue.css}] Colors various features in a soft blue.
 \end{description}
 In cases where you wish to completely manage the \CSS\,
@@ -547,7 +547,7 @@ The option can also reference a remote script; for example to invoke MathJax unc
 from the `cloud':
 \begin{lstlisting}[style=shell]
 latexmlpost --format=html5 \
-   --javascript='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=MML_CHTML' \
+   --javascript='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=MML_CHTML' \
    --destination=%somewhere/doc%.html %doc%
 \end{lstlisting}
 
